@@ -18,8 +18,7 @@ author:
 # -------------------------
 # Theme (remote) and plugins
 # -------------------------
-# remote_theme: use Minimal Mistakes hosted on GitHub
-remote_theme: "mmistakes/minimal-mistakes"
+theme: jekyll-theme-primer
 
 # GitHub Pages supported plugins only (safe)
 plugins:
