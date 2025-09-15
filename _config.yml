@@ -1,0 +1,75 @@
+# -------------------------
+# Site identity / basics
+# -------------------------
+title: "Tranquil Favours"                           # site title shown in header/meta
+description: "Aspiring AI/ML Engineer — Python • Data • Models"
+url: "https://trvnquil.github.io"                    # your user site URL
+baseurl: ""                                          # empty for user site (no subpath)
+
+# -------------------------
+# Author / contact (phone omitted)
+# -------------------------
+author:
+  name: "Tranquil Favours"
+  email: "iamtranquil02@gmail.com"                   # change if you don't want this public
+  location: "Nairobi, Kenya"
+  avatar: "assets/images/profile.jpg"                # path to your profile photo
+
+# -------------------------
+# Theme (remote) and plugins
+# -------------------------
+# remote_theme: use Minimal Mistakes hosted on GitHub
+remote_theme: "mmistakes/minimal-mistakes"
+
+# GitHub Pages supported plugins only (safe)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# -------------------------
+# Collections: projects (site will output project pages)
+# -------------------------
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/                      # nice URLs for each project
+
+# default layouts for collections
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "single-project"
+
+# -------------------------
+# Navigation (top nav)
+# -------------------------
+nav:
+  - Home: /
+  - Projects: /projects/
+  - Blog: /blog/
+  - About: /about/
+
+# -------------------------
+# Posts permalink style
+# -------------------------
+permalink: /:categories/:year/:title/
+
+# -------------------------
+# Files/folders to exclude from build
+# -------------------------
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# -------------------------
+# Theme-specific hint:
+# You can add theme options (like header, analytics, social links)
+# later; Minimal Mistakes docs show many fields. We'll add them
+# only when you're ready to expose email/LinkedIn/resume etc.
+# -------------------------
+
