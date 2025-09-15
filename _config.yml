@@ -1,40 +1,39 @@
 # -------------------------
 # Site identity / basics
 # -------------------------
-title: "Tranquil Favours"                           # site title shown in header/meta
+title: "Tranquil Favours"
 description: "Aspiring AI/ML Engineer — Python • Data • Models"
-url: "https://trvnquil.github.io"                    # your user site URL
-baseurl: ""                                          # empty for user site (no subpath)
+url: "https://trvnquil.github.io"
+baseurl: ""
 
 # -------------------------
-# Author / contact (phone omitted)
+# Author / contact
 # -------------------------
 author:
   name: "Tranquil Favours"
-  email: "iamtranquil02@gmail.com"                   # change if you don't want this public
+  email: "iamtranquil02@gmail.com"
   location: "Nairobi, Kenya"
-  avatar: "assets/images/profile.jpg"                # path to your profile photo
+  avatar: "assets/images/profile.jpg"
+  linkedin: "https://www.linkedin.com/in/tranquil-omondi/"
+  role: "AI/ML Engineer (Student)"
 
 # -------------------------
-# Theme (remote) and plugins
+# Theme and plugins
 # -------------------------
 theme: jekyll-theme-primer
-
-# GitHub Pages supported plugins only (safe)
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
 
 # -------------------------
-# Collections: projects (site will output project pages)
+# Collections (for future projects)
 # -------------------------
 collections:
   projects:
     output: true
-    permalink: /projects/:name/                      # nice URLs for each project
+    permalink: /projects/:name/
 
-# default layouts for collections
 defaults:
   - scope:
       path: ""
@@ -43,7 +42,7 @@ defaults:
       layout: "single-project"
 
 # -------------------------
-# Navigation (top nav)
+# Navigation menu
 # -------------------------
 nav:
   - Home: /
@@ -52,23 +51,15 @@ nav:
   - About: /about/
 
 # -------------------------
-# Posts permalink style
+# Permalink structure
 # -------------------------
 permalink: /:categories/:year/:title/
 
 # -------------------------
-# Files/folders to exclude from build
+# Excluded files
 # -------------------------
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
   - vendor
-
-# -------------------------
-# Theme-specific hint:
-# You can add theme options (like header, analytics, social links)
-# later; Minimal Mistakes docs show many fields. We'll add them
-# only when you're ready to expose email/LinkedIn/resume etc.
-# -------------------------
-
